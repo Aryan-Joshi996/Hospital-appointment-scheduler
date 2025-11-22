@@ -4,7 +4,7 @@ def add_appointment():
     print("\nProvide appointment details:")
     patient = input("Patient's name: ")
     doctor = input("Doctor's name: ")
-    date = input("Date (YYYY-MM-DD): ")
+    date = input("Date (DD-MM-YYYY): ")
     time = input("Time (HH:MM): ")
     reason = input("Reason for visit: ")
 
@@ -29,7 +29,7 @@ def list_appointments_by_date():
     if not appointments:
         print("\nNo appointments scheduled.")
         return
-    date = input("Enter date (YYYY-MM-DD): ")
+    date = input("Enter date (DD-MM-YYYY): ")
     found = [a for a in appointments if a["date"] == date]
     if not found:
         print("\nNo appointments on this date.")
@@ -76,7 +76,10 @@ def main():
             print("Bye.")
             break
         else:
-            print("Invalid choice.")
+            print("Not a valid choice.")
 
 if __name__ == "__main__":
+
+main()
+
     main()
