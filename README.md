@@ -6,6 +6,7 @@ Can also remove the exisiting appointment.
 Execution of the code:
 Save the code as.py
 Run the script: Execute the file using the python interpreter.
+Key functions:
 main(): The primary function that runs the infinite menu loop and handles user input (the main control flow).
 add_appointment(): Collects appointment data and performs the crucial schedule conflict check.
 list_appoitments(): Displays all appointments, utilizing a sorted() function to organize the output by physician.
